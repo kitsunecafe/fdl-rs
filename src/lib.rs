@@ -330,7 +330,11 @@ mod tests {
         if let Ok(fdl) = FDL::load_from_file("test.fdl") {
             if let Some(flap_frames) = fdl.fetch("flap", "frames") {
                 assert_eq!(flap_frames, "1");
+            } else {
+                panic!("could not fetch value");
             }
+        } else {
+            panic!("could not open file");
         }
     }
 }
