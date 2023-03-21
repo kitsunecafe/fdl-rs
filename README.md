@@ -1,4 +1,4 @@
-# FDL-rs
+# fdl-rs
 [File Description Language](https://github.com/razziefox/FDL) parser for Rust
 
 # What's FDL?
